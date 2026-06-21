@@ -6,8 +6,8 @@
 
     body {
         font-family: 'Inter', sans-serif;
-        background: #0a1628;
-        color: white;
+        background: #ffffff;
+        color: #1e293b;
         overflow-x: hidden;
     }
 
@@ -19,7 +19,7 @@
         width: 100%;
         height: 100%;
         z-index: 0;
-        background: linear-gradient(135deg, #0a1628 0%, #1a2332 100%);
+        background: #ffffff;
     }
 
     .bg-gradient {
@@ -28,26 +28,26 @@
         height: 800px;
         border-radius: 50%;
         filter: blur(100px);
-        opacity: 0.3;
+        opacity: 0.15;
         animation: float 20s infinite ease-in-out;
     }
 
     .bg-gradient:nth-child(1) {
-        background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+        background: linear-gradient(135deg, #0ea5e9, #bae6fd);
         top: -200px;
         left: -200px;
         animation-delay: 0s;
     }
 
     .bg-gradient:nth-child(2) {
-        background: linear-gradient(135deg, #1e40af, #082174);
+        background: linear-gradient(135deg, #3b82f6, #93c5fd);
         top: 50%;
         right: -200px;
         animation-delay: -5s;
     }
 
     .bg-gradient:nth-child(3) {
-        background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+        background: linear-gradient(135deg, #06b6d4, #a5f3fc);
         bottom: -200px;
         left: 30%;
         animation-delay: -10s;
@@ -67,15 +67,17 @@
 
     /* Glass Effect */
     .glass {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         transition: all 0.3s ease;
     }
 
     .glass:hover {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.9);
+        border-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
     }
 
     /* Gradient Text */
@@ -230,11 +232,11 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(0, 0, 0, 0.02);
     }
 
     ::-webkit-scrollbar-thumb {
-        background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+        background: linear-gradient(135deg, #bae6fd, #93c5fd);
         border-radius: 10px;
     }
 
